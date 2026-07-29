@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Constra — Construction &amp; Renovation</title>
+  <meta name="description" content="Bold construction and renovation site with project showcase and quote form.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="top-info text-center text-md-left">
+              <li><i class="fas fa-map-marker-alt"></i> <p class="info-text"><!--FG1:slot:contact_address-->123 Main Street, Your City<!--/FG1:slot--></p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Topbar end -->
+
+    <!-- Header start -->
+    <header id="header" class="header-one">
+      <div class="bg-white">
+        <div class="container">
+          <div class="logo-area">
+            <div class="row align-items-center">
+              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="index.html">
+                  <img loading="lazy" src="assets/logo.png" alt="Company logo">
+                </a>
+              </div><!-- logo end -->
+
+              <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                        <p class="info-box-title">Call Us</p>
+                        <p class="info-box-subtitle"><!--FG1:slot:contact_phone-->(555) 000-0000<!--/FG1:slot--></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="last">
+                    <div class="info-box last">
+                      <div class="info-box-content">
+                        <p class="info-box-title">Email Us</p>
+                        <p class="info-box-subtitle"><!--FG1:slot:contact_email_text-->hello@example.com<!--/FG1:slot--></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="contact.html"><!--FG1:slot:cta_text-->Get a quote<!--/FG1:slot--></a>
+                  </li>
+                </ul><!-- Ul end -->
+              </div><!-- header right end -->
+            </div><!-- logo area end -->
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+      </div>
+
+      <div class="site-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div><!--/ Row end -->
+        </div><!--/ Container end -->
+      </div><!--/ Navigation end -->
+    </header>
+    <!--/ Header end -->
+
+    <div class="banner-carousel banner-carousel-1 mb-0">
+      <div class="banner-carousel-item" style="background-image:url(assets/slider-main/bg1.jpg)">
+        <div class="slider-content">
+          <div class="container h-100">
+            <div class="row align-items-center h-100">
+              <div class="col-md-12 text-center">
+                <h1 class="slide-sub-title"><!--FG1:slot:hero_title-->Built right, from the ground up<!--/FG1:slot--></h1>
+                <p class="slider-description lead"><!--FG1:slot:hero_subtitle-->Construction and renovation services for homes and businesses — planned carefully and delivered with clear communication at every step.<!--/FG1:slot--></p>
+                <p>
+                  <a href="services.html" class="slider btn btn-primary">Our Services</a>
+                  <a href="contact.html" class="slider btn btn-primary border">Get a Free Quote</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Hero end -->
+
+    <!--FG1:section:booking_form-->
+    <section class="call-to-action-box no-padding">
+      <div class="container">
+        <div class="action-style-box">
+          <div class="row align-items-center">
+            <div class="col-lg-5 text-center text-lg-left">
+              <div class="call-to-action-text">
+                <h3 class="action-title"><!--FG1:slot:booking_heading-->Planning a project? Request a call back<!--/FG1:slot--></h3>
+              </div>
+            </div><!-- Col end -->
+            <div class="col-lg-7 mt-3 mt-lg-0">
+              <form id="callback-form" class="callback-form" novalidate>
+                <div class="form-row">
+                  <div class="col-md-5 mb-2 mb-md-0">
+                    <label for="cb-name" class="content-hidden">Your name</label>
+                    <input type="text" class="form-control" id="cb-name" name="name" placeholder="Your name" required>
+                  </div>
+                  <div class="col-md-4 mb-2 mb-md-0">
+                    <label for="cb-phone" class="content-hidden">Phone</label>
+                    <input type="tel" class="form-control" id="cb-phone" name="phone" placeholder="Phone" required>
+                  </div>
+                  <div class="col-md-3">
+                    <button type="submit" class="btn btn-dark btn-block"><!--FG1:slot:booking_button-->Call me back<!--/FG1:slot--></button>
+                  </div>
+                </div>
+                <input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <p class="fg1-form-note" hidden></p>
+              </form>
+            </div><!-- Col end -->
+          </div><!-- row end -->
+        </div><!-- Action style box -->
+      </div><!-- Container end -->
+    </section>
+    <!--/FG1:section-->
+    <!--/ Booking end -->
+
+    <section id="ts-features" class="ts-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ts-intro">
+              <h2 class="into-title"><!--FG1:slot:about_eyebrow-->About us<!--/FG1:slot--></h2>
+              <h3 class="into-sub-title"><!--FG1:slot:about_heading-->We deliver solid work on every project<!--/FG1:slot--></h3>
+              <p><!--FG1:slot:about_body-->We are a full-service construction and renovation team. From the first site visit to the final walkthrough, we keep the process clear, the site tidy, and the workmanship dependable.<!--/FG1:slot--></p>
+            </div><!-- Intro box end -->
+
+            <div class="gap-20"></div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon">
+                    <i class="fas fa-trophy"></i>
+                  </span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title"><!--FG1:slot:about_feature_1-->Quality workmanship<!--/FG1:slot--></h3>
+                  </div>
+                </div><!-- Service 1 end -->
+              </div><!-- col end -->
+
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon">
+                    <i class="fas fa-sliders-h"></i>
+                  </span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title"><!--FG1:slot:about_feature_2-->Clear communication<!--/FG1:slot--></h3>
+                  </div>
+                </div><!-- Service 2 end -->
+              </div><!-- col end -->
+            </div><!-- Content row 1 end -->
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title"><!--FG1:slot:about_feature_3-->Reliable scheduling<!--/FG1:slot--></h3>
+                  </div>
+                </div><!-- Service 3 end -->
+              </div><!-- col end -->
+
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon">
+                    <i class="fas fa-users"></i>
+                  </span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title"><!--FG1:slot:about_feature_4-->A team of professionals<!--/FG1:slot--></h3>
+                  </div>
+                </div><!-- Service 4 end -->
+              </div><!-- col end -->
+            </div><!-- Content row 2 end -->
+          </div><!-- Col end -->
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <h3 class="into-sub-title"><!--FG1:slot:values_heading-->Our values<!--/FG1:slot--></h3>
+
+            <div class="accordion-group values-static">
+              <!--FG1:slot:values_list--><div class="card">
+                <div class="card-header p-0 bg-transparent">
+                  <h4 class="values-title">Safety</h4>
+                </div>
+                <div class="card-body">
+                  Every job site is run to strict safety standards, protecting our crew, your property, and everyone who visits.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0 bg-transparent">
+                  <h4 class="values-title">Quality</h4>
+                </div>
+                <div class="card-body">
+                  We use proven materials and methods, and we stand behind the work we hand over.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0 bg-transparent">
+                  <h4 class="values-title">Integrity</h4>
+                </div>
+                <div class="card-body">
+                  Straightforward quotes, honest timelines, and no surprises at the end of the job.
+                </div>
+              </div><!--/FG1:slot-->
+            </div>
+            <!--/ Values end -->
+          </div><!-- Col end -->
+        </div><!-- Row end -->
+      </div><!-- Container end -->
+    </section><!-- Feature area end -->
+
+    <section id="ts-service-area" class="ts-service-area pb-0">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <h2 class="section-title"><!--FG1:slot:services_intro-->We are specialists in<!--/FG1:slot--></h2>
+            <h3 class="section-sub-title"><!--FG1:slot:services_heading-->What we do<!--/FG1:slot--></h3>
+          </div>
+        </div>
+        <!--/ Title row end -->
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <!--FG1:slot:service_highlights--><div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon"><i class="fas fa-hard-hat"></i></span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title">General contracting</h3>
+                    <p>Start-to-finish management of your build, with one point of contact.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon"><i class="fas fa-home"></i></span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title">Home renovation</h3>
+                    <p>Kitchens, bathrooms, and whole-home updates that fit the way you live.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon"><i class="fas fa-paint-roller"></i></span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title">Interior finishing</h3>
+                    <p>Flooring, trim, drywall, and paint finished to a clean standard.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon"><i class="fas fa-warehouse"></i></span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title">Exterior work</h3>
+                    <p>Siding, roofing, decks, and outdoor structures built for the weather.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon"><i class="fas fa-ruler-combined"></i></span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title">Additions &amp; extensions</h3>
+                    <p>More room for your family or your business, planned and permitted properly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ts-service-box">
+                  <span class="ts-service-icon"><i class="fas fa-tools"></i></span>
+                  <div class="ts-service-box-content">
+                    <h3 class="service-box-title">Repairs &amp; maintenance</h3>
+                    <p>Small fixes and planned upkeep handled quickly and tidily.</p>
+                  </div>
+                </div>
+              </div><!--/FG1:slot-->
+            </div>
+          </div><!-- Col end -->
+
+          <div class="col-lg-4 text-center mt-4 mt-lg-0">
+            <img loading="lazy" class="img-fluid" src="assets/services/service-center.jpg" alt="Construction crew at work on site">
+          </div><!-- Col end -->
+        </div><!-- Content row end -->
+      </div>
+      <!--/ Container end -->
+    </section><!-- Service end -->
+
+    <!--FG1:section:photo_gallery-->
+    <section id="project-area" class="project-area solid-bg">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h2 class="section-title"><!--FG1:slot:gallery_intro-->Our work<!--/FG1:slot--></h2>
+            <h3 class="section-sub-title"><!--FG1:slot:gallery_heading-->Recent projects<!--/FG1:slot--></h3>
+          </div>
+        </div>
+        <!--/ Title row end -->
+
+        <div class="row shuffle-wrapper">
+          <div class="col-lg-4 col-md-6 shuffle-item">
+            <div class="project-img-container">
+              <img class="img-fluid" src="assets/projects/project1.jpg" alt="Modern commercial building exterior">
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">Commercial build</h3>
+                  <p class="project-cat">Commercial</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- item 1 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item">
+            <div class="project-img-container">
+              <img class="img-fluid" src="assets/projects/project2.jpg" alt="Healthcare facility building">
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">Healthcare facility</h3>
+                  <p class="project-cat">Healthcare</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- item 2 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item">
+            <div class="project-img-container">
+              <img class="img-fluid" src="assets/projects/project3.jpg" alt="Office complex under construction">
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">Office complex</h3>
+                  <p class="project-cat">Commercial</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- item 3 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item">
+            <div class="project-img-container">
+              <img class="img-fluid" src="assets/projects/project4.jpg" alt="Public building with glass facade">
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">Public building</h3>
+                  <p class="project-cat">Infrastructure</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- item 4 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item">
+            <div class="project-img-container">
+              <img class="img-fluid" src="assets/projects/project5.jpg" alt="Elevated rail infrastructure project">
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">Transit project</h3>
+                  <p class="project-cat">Infrastructure</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- item 5 end -->
+
+          <div class="col-lg-4 col-md-6 shuffle-item">
+            <div class="project-img-container">
+              <img class="img-fluid" src="assets/projects/project6.jpg" alt="Contemporary residential house">
+              <div class="project-item-info">
+                <div class="project-item-info-content">
+                  <h3 class="project-item-title">Residential build</h3>
+                  <p class="project-cat">Residential</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- item 6 end -->
+        </div><!-- Projects grid end -->
+      </div>
+      <!--/ Container end -->
+    </section>
+    <!--/FG1:section-->
+    <!--/ Project area end -->
+
+    <!--FG1:section:newsletter_signup-->
+    <section class="subscribe no-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="subscribe-call-to-acton">
+              <h3><!--FG1:slot:subscribe_help_heading-->Can we help?<!--/FG1:slot--></h3>
+              <h4><!--FG1:slot:contact_phone-->(555) 000-0000<!--/FG1:slot--></h4>
+            </div>
+          </div><!-- Col end -->
+
+          <div class="col-lg-8">
+            <div class="ts-newsletter row align-items-center">
+              <div class="col-md-5 newsletter-introtext">
+                <h4 class="text-white mb-0"><!--FG1:slot:newsletter_heading-->Newsletter sign-up<!--/FG1:slot--></h4>
+                <p class="text-white"><!--FG1:slot:newsletter_text-->Occasional updates and news<!--/FG1:slot--></p>
+              </div>
+
+              <div class="col-md-7 newsletter-form">
+                <form id="newsletter-form" novalidate>
+                  <div class="form-group mb-0">
+                    <label for="newsletter-email" class="content-hidden">Newsletter email</label>
+                    <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Enter your email and press Enter" autocomplete="off" required>
+                  </div>
+                  <input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                  <p class="fg1-form-note text-white mb-0" hidden></p>
+                </form>
+              </div>
+            </div><!-- Newsletter end -->
+          </div><!-- Col end -->
+        </div><!-- Content row end -->
+      </div>
+      <!--/ Container end -->
+    </section>
+    <!--/FG1:section-->
+    <!--/ Subscribe end -->
+
+    <footer id="footer" class="footer bg-overlay">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 footer-widget footer-about">
+              <h3 class="widget-title">About Us</h3>
+              <img loading="lazy" width="200" class="footer-logo" src="assets/footer-logo.png" alt="Company logo">
+              <p><!--FG1:slot:footer_blurb-->A local construction and renovation company serving homeowners and businesses in the surrounding area.<!--/FG1:slot--></p>
+            </div><!-- Col end -->
+
+            <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+              <h3 class="widget-title">Working Hours</h3>
+              <div class="working-hours">
+                <!--FG1:slot:footer_hours-->Reach out any time — we will get back to you promptly.
+                <br><br> Monday - Friday: <span class="text-right">8:00 - 17:00</span>
+                <br> Saturday: <span class="text-right">9:00 - 14:00</span>
+                <br> Sunday: <span class="text-right">Closed</span><!--/FG1:slot-->
+              </div>
+            </div><!-- Col end -->
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+              <h3 class="widget-title">Services</h3>
+              <ul class="list-arrow">
+                <!--FG1:slot:footer_service_links--><li><a href="services.html">General contracting</a></li>
+                <li><a href="services.html">Home renovation</a></li>
+                <li><a href="services.html">Interior finishing</a></li>
+                <li><a href="services.html">Exterior work</a></li>
+                <li><a href="services.html">Repairs &amp; maintenance</a></li><!--/FG1:slot-->
+              </ul>
+            </div><!-- Col end -->
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+      </div><!-- Footer main end -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="copyright-info">
+                <span>&copy; All rights reserved. Design: <a href="https://themefisher.com">Themefisher</a></span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="footer-menu text-center text-md-right">
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- Row end -->
+
+          <div id="back-to-top" class="back-to-top position-fixed">
+            <button class="btn btn-primary" title="Back to Top" aria-label="Back to top">
+              <i class="fa fa-angle-double-up"></i>
+            </button>
+          </div>
+        </div><!-- Container end -->
+      </div><!-- Copyright end -->
+    </footer><!-- Footer end -->
+
+  </div><!-- Body inner end -->
+
+  <script>
+    window.FG1 = {
+      projectId: "{{FG1_PROJECT_ID}}",
+      formToken: "{{FG1_FORM_TOKEN}}",
+      factoryUrl: "{{FG1_FACTORY_URL}}",
+      approvalUrl: "{{FG1_APPROVAL_URL}}",
+      demo: false
+    };
+  </script>
+  <script src="site.js" defer></script>
+</body>
+</html>
