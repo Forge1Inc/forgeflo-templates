@@ -3,108 +3,350 @@
   "name": "Aurelia",
   "version": "1.0.0",
   "description": "Black-and-gold luxury salon site for high-value stylists and studios",
-  "verticals": ["beauty"],
+  "verticals": [
+    "beauty"
+  ],
   "pages": [
-    {"file": "index.html", "title": "Home", "core": true},
-    {"file": "services.html", "title": "Services", "core": true},
-    {"file": "contact.html", "title": "Contact", "core": true}
+    {
+      "file": "index.html",
+      "title": "Home",
+      "core": true
+    },
+    {
+      "file": "services.html",
+      "title": "Services",
+      "core": true
+    },
+    {
+      "file": "contact.html",
+      "title": "Contact",
+      "core": true
+    }
   ],
   "slots": [
-    {"id": "site_title", "page": "index.html", "type": "text",
-     "description": "Business name shown as the header wordmark (rendered in spaced capitals). Same value on every page.", "maxLen": 30},
-    {"id": "hero_eyebrow", "page": "index.html", "type": "text",
-     "description": "Tiny gold capitals line above the hero headline — the positioning statement (e.g. Luxury hair atelier)", "maxLen": 40},
-    {"id": "hero_title", "page": "index.html", "type": "text",
-     "description": "Main homepage headline in large gold serif; punchy, no punctuation at end", "maxLen": 60},
-    {"id": "hero_subtitle", "page": "index.html", "type": "text",
-     "description": "One or two refined supporting sentences under the headline — calm, high-value tone, no invented claims", "maxLen": 220},
-    {"id": "cta_text", "page": "index.html", "type": "text",
-     "description": "Label of the gold hero call-to-action button linking to contact.html", "maxLen": 40},
-    {"id": "signature_heading", "page": "index.html", "type": "text",
-     "description": "Small-caps heading above the signature services grid", "maxLen": 40},
-    {"id": "signature_intro", "page": "index.html", "type": "text",
-     "description": "One elegant sentence under the signature services heading", "maxLen": 140},
-    {"id": "service_list", "page": "index.html", "type": "list",
-     "description": "Signature services shown as numbered gold-framed cards; 3-6 items, same value fills the service_list on services.html. Each item: <li class=\"service-item\"><h3 class=\"service-name\">Service name</h3><p class=\"service-desc\">One short sentence about the service.</p></li> — numbering is added by CSS, do NOT include numbers or prices."},
-    {"id": "philosophy_heading", "page": "index.html", "type": "text",
-     "description": "Small-caps heading of the philosophy band", "maxLen": 40},
-    {"id": "philosophy_body", "page": "index.html", "type": "text",
-     "description": "One-sentence studio philosophy rendered as a large italic serif pull-quote; no invented claims", "maxLen": 220},
-    {"id": "about_heading", "page": "index.html", "type": "text",
-     "description": "Heading of the about band (e.g. The atelier)", "maxLen": 50},
-    {"id": "about_body", "page": "index.html", "type": "text",
-     "description": "Short about paragraph — atmosphere, approach and what a guest can expect; no invented claims (no years, awards or review counts)", "maxLen": 500},
-    {"id": "gallery_heading", "page": "index.html", "type": "text",
-     "description": "Heading of the gated portfolio gallery band (photo_gallery add-on)", "maxLen": 50},
-    {"id": "gallery_intro", "page": "index.html", "type": "text",
-     "description": "One quiet sentence under the gallery heading", "maxLen": 160},
-    {"id": "newsletter_heading", "page": "index.html", "type": "text",
-     "description": "Heading of the gated mailing-list band (newsletter_signup add-on)", "maxLen": 50},
-    {"id": "newsletter_text", "page": "index.html", "type": "text",
-     "description": "One-sentence invitation to join the mailing list — understated, no spammy language", "maxLen": 180},
-    {"id": "newsletter_button", "page": "index.html", "type": "text",
-     "description": "Newsletter submit button label", "maxLen": 30},
-    {"id": "closing_heading", "page": "index.html", "type": "text",
-     "description": "Large serif line of the closing call-to-action band", "maxLen": 60},
-    {"id": "closing_button", "page": "index.html", "type": "text",
-     "description": "Label of the closing band button linking to contact.html", "maxLen": 40},
-    {"id": "footer_blurb", "page": "index.html", "type": "text",
-     "description": "Short footer paragraph about the business. Same value on every page.", "maxLen": 260},
-    {"id": "footer_copyright", "page": "index.html", "type": "text",
-     "description": "Business name inside the © line. Same value on every page.", "maxLen": 40},
-
-    {"id": "site_title", "page": "services.html", "type": "text",
-     "description": "Business name shown as the header wordmark. Same value on every page.", "maxLen": 30},
-    {"id": "services_heading", "page": "services.html", "type": "text",
-     "description": "Services page main heading (e.g. The service menu)", "maxLen": 50},
-    {"id": "services_intro", "page": "services.html", "type": "text",
-     "description": "Intro paragraph under the services heading — consultation-first framing, no prices", "maxLen": 320},
-    {"id": "service_list", "page": "services.html", "type": "list",
-     "description": "Full service menu as numbered rows; 3-6 items, same value fills the service_list on index.html. Each item: <li class=\"service-item\"><h3 class=\"service-name\">Service name</h3><p class=\"service-desc\">One short sentence about the service.</p></li> — numbering is added by CSS, do NOT include numbers or prices."},
-    {"id": "services_note", "page": "services.html", "type": "text",
-     "description": "Italic note under the menu explaining that timings/recommendations are confirmed at consultation (this template deliberately shows no prices)", "maxLen": 220},
-    {"id": "services_cta", "page": "services.html", "type": "text",
-     "description": "Label of the services page button linking to contact.html", "maxLen": 40},
-    {"id": "footer_blurb", "page": "services.html", "type": "text",
-     "description": "Short footer paragraph about the business. Same value on every page.", "maxLen": 260},
-    {"id": "footer_copyright", "page": "services.html", "type": "text",
-     "description": "Business name inside the © line. Same value on every page.", "maxLen": 40},
-
-    {"id": "site_title", "page": "contact.html", "type": "text",
-     "description": "Business name shown as the header wordmark. Same value on every page.", "maxLen": 30},
-    {"id": "contact_heading", "page": "contact.html", "type": "text",
-     "description": "Contact page main heading", "maxLen": 50},
-    {"id": "contact_intro", "page": "contact.html", "type": "text",
-     "description": "Short paragraph inviting visitors to get in touch", "maxLen": 260},
-    {"id": "lead_form_heading", "page": "contact.html", "type": "text",
-     "description": "Heading above the lead form", "maxLen": 50},
-    {"id": "lead_form_button", "page": "contact.html", "type": "text",
-     "description": "Lead form submit button label", "maxLen": 40},
-    {"id": "contact_details_heading", "page": "contact.html", "type": "text",
-     "description": "Heading above the contact details list", "maxLen": 40},
-    {"id": "contact_phone", "page": "contact.html", "type": "text",
-     "description": "Business phone number as plain text; keep the neutral default until a real number is confirmed", "maxLen": 40},
-    {"id": "contact_email_text", "page": "contact.html", "type": "text",
-     "description": "Business email address as plain text; neutral default until confirmed", "maxLen": 60},
-    {"id": "contact_address", "page": "contact.html", "type": "text",
-     "description": "Street address or locality as one line; neutral default until confirmed", "maxLen": 120},
-    {"id": "contact_hours", "page": "contact.html", "type": "text",
-     "description": "Opening hours as one line (e.g. Tue–Sat 9am–6pm); neutral default until confirmed", "maxLen": 120},
-    {"id": "booking_heading", "page": "contact.html", "type": "text",
-     "description": "Heading of the gated booking band (booking_form add-on)", "maxLen": 50},
-    {"id": "booking_text", "page": "contact.html", "type": "text",
-     "description": "One sentence inviting guests to propose a day and time; the band button anchors to the lead form", "maxLen": 220},
-    {"id": "booking_button", "page": "contact.html", "type": "text",
-     "description": "Label of the booking band button (anchors to #lead-form)", "maxLen": 40},
-    {"id": "footer_blurb", "page": "contact.html", "type": "text",
-     "description": "Short footer paragraph about the business. Same value on every page.", "maxLen": 260},
-    {"id": "footer_copyright", "page": "contact.html", "type": "text",
-     "description": "Business name inside the © line. Same value on every page.", "maxLen": 40}
+    {
+      "id": "site_title",
+      "page": "index.html",
+      "type": "text",
+      "description": "Business name shown as the header wordmark (rendered in spaced capitals). Same value on every page.",
+      "maxLen": 30
+    },
+    {
+      "id": "hero_eyebrow",
+      "page": "index.html",
+      "type": "text",
+      "description": "Tiny gold capitals line above the hero headline \u2014 the positioning statement (e.g. Luxury hair atelier)",
+      "maxLen": 40
+    },
+    {
+      "id": "hero_title",
+      "page": "index.html",
+      "type": "text",
+      "description": "Main homepage headline in large gold serif; punchy, no punctuation at end",
+      "maxLen": 60
+    },
+    {
+      "id": "hero_subtitle",
+      "page": "index.html",
+      "type": "text",
+      "description": "One or two refined supporting sentences under the headline \u2014 calm, high-value tone, no invented claims",
+      "maxLen": 220
+    },
+    {
+      "id": "cta_text",
+      "page": "index.html",
+      "type": "text",
+      "description": "Label of the gold hero call-to-action button linking to contact.html",
+      "maxLen": 40
+    },
+    {
+      "id": "signature_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Small-caps heading above the signature services grid",
+      "maxLen": 40
+    },
+    {
+      "id": "signature_intro",
+      "page": "index.html",
+      "type": "text",
+      "description": "One elegant sentence under the signature services heading",
+      "maxLen": 140
+    },
+    {
+      "id": "service_list",
+      "page": "index.html",
+      "type": "list",
+      "description": "Signature services shown as numbered gold-framed cards; 3-6 items, same value fills the service_list on services.html. Each item: <li class=\"service-item\"><h3 class=\"service-name\">Service name</h3><p class=\"service-desc\">One short sentence about the service.</p></li> \u2014 numbering is added by CSS, do NOT include numbers or prices."
+    },
+    {
+      "id": "philosophy_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Small-caps heading of the philosophy band",
+      "maxLen": 40
+    },
+    {
+      "id": "philosophy_body",
+      "page": "index.html",
+      "type": "text",
+      "description": "One-sentence studio philosophy rendered as a large italic serif pull-quote; no invented claims",
+      "maxLen": 220
+    },
+    {
+      "id": "about_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the about band (e.g. The atelier)",
+      "maxLen": 50
+    },
+    {
+      "id": "about_body",
+      "page": "index.html",
+      "type": "text",
+      "description": "Short about paragraph \u2014 atmosphere, approach and what a guest can expect; no invented claims (no years, awards or review counts)",
+      "maxLen": 500
+    },
+    {
+      "id": "gallery_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the gated portfolio gallery band (photo_gallery add-on)",
+      "maxLen": 50
+    },
+    {
+      "id": "gallery_intro",
+      "page": "index.html",
+      "type": "text",
+      "description": "One quiet sentence under the gallery heading",
+      "maxLen": 160
+    },
+    {
+      "id": "newsletter_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the gated mailing-list band (newsletter_signup add-on)",
+      "maxLen": 50
+    },
+    {
+      "id": "newsletter_text",
+      "page": "index.html",
+      "type": "text",
+      "description": "One-sentence invitation to join the mailing list \u2014 understated, no spammy language",
+      "maxLen": 180
+    },
+    {
+      "id": "newsletter_button",
+      "page": "index.html",
+      "type": "text",
+      "description": "Newsletter submit button label",
+      "maxLen": 30
+    },
+    {
+      "id": "closing_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Large serif line of the closing call-to-action band",
+      "maxLen": 60
+    },
+    {
+      "id": "closing_button",
+      "page": "index.html",
+      "type": "text",
+      "description": "Label of the closing band button linking to contact.html",
+      "maxLen": 40
+    },
+    {
+      "id": "footer_blurb",
+      "page": "index.html",
+      "type": "text",
+      "description": "Short footer paragraph about the business. Same value on every page.",
+      "maxLen": 260
+    },
+    {
+      "id": "footer_copyright",
+      "page": "index.html",
+      "type": "text",
+      "description": "Business name inside the \u00a9 line. Same value on every page.",
+      "maxLen": 40
+    },
+    {
+      "id": "site_title",
+      "page": "services.html",
+      "type": "text",
+      "description": "Business name shown as the header wordmark. Same value on every page.",
+      "maxLen": 30
+    },
+    {
+      "id": "services_heading",
+      "page": "services.html",
+      "type": "text",
+      "description": "Services page main heading (e.g. The service menu)",
+      "maxLen": 50
+    },
+    {
+      "id": "services_intro",
+      "page": "services.html",
+      "type": "text",
+      "description": "Intro paragraph under the services heading \u2014 consultation-first framing, no prices",
+      "maxLen": 320
+    },
+    {
+      "id": "service_list",
+      "page": "services.html",
+      "type": "list",
+      "description": "Full service menu as numbered rows; 3-6 items, same value fills the service_list on index.html. Each item: <li class=\"service-item\"><h3 class=\"service-name\">Service name</h3><p class=\"service-desc\">One short sentence about the service.</p></li> \u2014 numbering is added by CSS, do NOT include numbers or prices."
+    },
+    {
+      "id": "services_note",
+      "page": "services.html",
+      "type": "text",
+      "description": "Italic note under the menu explaining that timings/recommendations are confirmed at consultation (this template deliberately shows no prices)",
+      "maxLen": 220
+    },
+    {
+      "id": "services_cta",
+      "page": "services.html",
+      "type": "text",
+      "description": "Label of the services page button linking to contact.html",
+      "maxLen": 40
+    },
+    {
+      "id": "footer_blurb",
+      "page": "services.html",
+      "type": "text",
+      "description": "Short footer paragraph about the business. Same value on every page.",
+      "maxLen": 260
+    },
+    {
+      "id": "footer_copyright",
+      "page": "services.html",
+      "type": "text",
+      "description": "Business name inside the \u00a9 line. Same value on every page.",
+      "maxLen": 40
+    },
+    {
+      "id": "site_title",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Business name shown as the header wordmark. Same value on every page.",
+      "maxLen": 30
+    },
+    {
+      "id": "contact_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Contact page main heading",
+      "maxLen": 50
+    },
+    {
+      "id": "contact_intro",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Short paragraph inviting visitors to get in touch",
+      "maxLen": 260
+    },
+    {
+      "id": "lead_form_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Heading above the lead form",
+      "maxLen": 50
+    },
+    {
+      "id": "lead_form_button",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Lead form submit button label",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_details_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Heading above the contact details list",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_phone",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Business phone number as plain text; keep the neutral default until a real number is confirmed",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_email_text",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Business email address as plain text; neutral default until confirmed",
+      "maxLen": 60
+    },
+    {
+      "id": "contact_address",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Street address or locality as one line; neutral default until confirmed",
+      "maxLen": 120
+    },
+    {
+      "id": "contact_hours",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Opening hours as one line (e.g. Tue\u2013Sat 9am\u20136pm); neutral default until confirmed",
+      "maxLen": 120
+    },
+    {
+      "id": "booking_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Heading of the gated booking band (booking_form add-on)",
+      "maxLen": 50
+    },
+    {
+      "id": "booking_text",
+      "page": "contact.html",
+      "type": "text",
+      "description": "One sentence inviting guests to propose a day and time; the band button anchors to the lead form",
+      "maxLen": 220
+    },
+    {
+      "id": "booking_button",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Label of the booking band button (anchors to #lead-form)",
+      "maxLen": 40
+    },
+    {
+      "id": "footer_blurb",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Short footer paragraph about the business. Same value on every page.",
+      "maxLen": 260
+    },
+    {
+      "id": "footer_copyright",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Business name inside the \u00a9 line. Same value on every page.",
+      "maxLen": 40
+    }
   ],
   "sections": [
-    {"id": "photo_gallery", "addOnCode": "photo_gallery", "page": "index.html"},
-    {"id": "newsletter_signup", "addOnCode": "newsletter_signup", "page": "index.html"},
-    {"id": "booking_form", "addOnCode": "booking_form", "page": "contact.html"}
+    {
+      "id": "photo_gallery",
+      "addOnCode": "photo_gallery",
+      "page": "index.html"
+    },
+    {
+      "id": "newsletter_signup",
+      "addOnCode": "newsletter_signup",
+      "page": "index.html"
+    },
+    {
+      "id": "booking_form",
+      "addOnCode": "booking_form",
+      "page": "contact.html"
+    }
   ],
   "paletteVars": {
     "--fg1-primary": "#c9a227",
@@ -130,7 +372,7 @@
     "assets/gallery02.jpg",
     "assets/gallery04.jpg"
   ],
-  "imageNotes": "salon-interior.webp: wide salon-room photo (styling stations, mirrors) used twice on index.html — as the framed about-band image (21:9 crop) and in the gated photo_gallery band (4:5 crop, object-position left so a different part of the room shows). salon-chairs.webp: portrait shot of styling chairs by a window, first tile of the gallery band. Both are CC0 photos (see SOURCE.md) and sit under a subtle CSS dark/gold veil (.photo-veil) so they stay inside the black/gold palette. gallery02.jpg and gallery04.jpg are original generated abstract gold-on-black art panels completing the 4-tile gallery. Customer portfolio photos replace the gallery images via the assets pipeline — portrait 4:5 crops display best. No logo image is used; the wordmark is the site_title slot rendered in spaced serif capitals.",
+  "imageNotes": "salon-interior.webp: wide salon-room photo (styling stations, mirrors) used twice on index.html \u2014 as the framed about-band image (21:9 crop) and in the gated photo_gallery band (4:5 crop, object-position left so a different part of the room shows). salon-chairs.webp: portrait shot of styling chairs by a window, first tile of the gallery band. Both are CC0 photos (see SOURCE.md) and sit under a subtle CSS dark/gold veil (.photo-veil) so they stay inside the black/gold palette. gallery02.jpg and gallery04.jpg are original generated abstract gold-on-black art panels completing the 4-tile gallery. Customer portfolio photos replace the gallery images via the assets pipeline \u2014 portrait 4:5 crops display best. No logo image is used; the wordmark is the site_title slot rendered in spaced serif capitals. customerImageTargets: the engine replaces these with the owner's uploaded photos (data-URI, <400KB each) on template builds.",
   "source": {
     "name": "Aurelia",
     "author": "Forge 1 Inc. (original)",
@@ -139,5 +381,9 @@
     "licenseUrl": "https://github.com/Forge1Inc/forgeflo-templates/blob/main/LICENSE",
     "fetchedAt": "2026-07-28"
   },
-  "attribution": null
+  "attribution": null,
+  "customerImageTargets": [
+    "assets/salon-interior.webp",
+    "assets/salon-chairs.webp"
+  ]
 }

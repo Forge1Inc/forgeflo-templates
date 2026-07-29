@@ -20,11 +20,11 @@
 
 /* Derived tones — every value is mixed from the palette above. */
 :root {
-	--au-hairline: color-mix(in srgb, var(--fg1-primary) 22%, transparent);
-	--au-hairline-strong: color-mix(in srgb, var(--fg1-primary) 45%, transparent);
-	--au-gold-wash: color-mix(in srgb, var(--fg1-primary) 9%, transparent);
+	--au-hairline: color-mix(in srgb, var(--fg1-accent) 26%, transparent);
+	--au-hairline-strong: color-mix(in srgb, var(--fg1-accent) 52%, transparent);
+	--au-gold-wash: color-mix(in srgb, var(--fg1-accent) 10%, transparent);
 	--au-ink: color-mix(in srgb, var(--fg1-bg) 88%, var(--fg1-primary));
-	--au-text-dim: color-mix(in srgb, var(--fg1-text) 72%, var(--fg1-bg));
+	--au-text-dim: color-mix(in srgb, var(--fg1-text) 84%, var(--fg1-bg));
 }
 
 /* ---------------------------------------------------------------- reset */
@@ -208,7 +208,7 @@ h2.eyebrow { line-height: 1.6; }
 }
 
 .btn-gold {
-	background: linear-gradient(135deg, var(--fg1-primary), var(--fg1-accent) 55%, var(--fg1-primary));
+	background: linear-gradient(135deg, color-mix(in srgb, var(--fg1-accent) 72%, var(--fg1-primary)), var(--fg1-accent) 55%, color-mix(in srgb, var(--fg1-accent) 72%, var(--fg1-primary)));
 	color: var(--fg1-accent-text);
 }
 
@@ -221,7 +221,7 @@ h2.eyebrow { line-height: 1.6; }
 .btn-outline {
 	background: transparent;
 	border-color: var(--au-hairline-strong);
-	color: var(--fg1-primary);
+	color: var(--fg1-accent);
 }
 
 .btn-outline:hover, .btn-outline:focus-visible {
@@ -369,17 +369,17 @@ h2.eyebrow { line-height: 1.6; }
 	letter-spacing: -0.02em;
 	margin: 0 auto 1.8rem;
 	max-width: 18ch;
-	color: var(--fg1-primary);
+	color: var(--fg1-accent);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
 	.hero-title {
 		background: linear-gradient(
 			164deg,
-			color-mix(in srgb, var(--fg1-text) 42%, var(--fg1-accent)) 0%,
-			var(--fg1-accent) 34%,
-			var(--fg1-primary) 58%,
-			color-mix(in srgb, var(--fg1-primary) 58%, var(--fg1-bg)) 100%
+			color-mix(in srgb, var(--fg1-text) 55%, var(--fg1-accent)) 0%,
+			var(--fg1-accent) 40%,
+			color-mix(in srgb, var(--fg1-accent) 72%, var(--fg1-text)) 72%,
+			color-mix(in srgb, var(--fg1-accent) 55%, var(--fg1-text)) 100%
 		);
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -769,7 +769,7 @@ textarea:focus {
 }
 
 .details-item {
-	padding-block: 1.5rem;
+	padding-block: 1.05rem;
 	border-bottom: 1px solid var(--au-hairline);
 }
 
@@ -780,8 +780,8 @@ textarea:focus {
 	font-weight: 600;
 	letter-spacing: 0.34em;
 	text-transform: uppercase;
-	color: var(--fg1-primary);
-	margin-bottom: 0.5rem;
+	color: var(--fg1-accent);
+	margin-bottom: 0.35rem;
 }
 
 .details-item dd {
