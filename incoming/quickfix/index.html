@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickFix Auto Garage</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN (required for bi bi-facebook etc.) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">QuickFix Garage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container position-relative z-1">
+    <div class="p-4 bg-dark bg-opacity-50 rounded">
+      <h1 class="display-4 text-white">Reliable Auto Repair Services</h1>
+      <p class="lead text-white">Fast, Affordable, and Trusted by Hundreds of Drivers</p>
+      <a href="#contact" class="btn btn-warning btn-lg mt-3">Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <img class="card-img" src="images/Engine-Diagnostics.png" alt="Engine Diagnostics" srcset="">
+            <h5 class="card-title">Engine Diagnostics</h5>
+            <p class="card-text">Accurate engine performance checkups to keep your vehicle running efficiently.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <img class="card-img" src="images/Brake-Repair.png" alt="Brake Repair" srcset="">
+            <h5 class="card-title">Brake Repair</h5>
+            <p class="card-text">Ensure your safety with reliable brake inspections and replacements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <img class="card-img" src="images/Oil-Change.png" alt="Oil Change" srcset="">
+            <h5 class="card-title">Oil Changes</h5>
+            <p class="card-text">Regular oil changes for a smooth, long-lasting engine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="testimonial py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Customer Reviews</h2>
+    <div class="row text-center">
+      <div class="col-md-6 mb-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John M." class="rounded-circle mb-3" width="80" height="80">
+        <blockquote class="blockquote">
+          <p style="min-height: 72px;">"Fast, friendly, and affordable service. I always trust this shop with my car."</p>
+          <footer class="blockquote-footer mt-2">John M.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Lisa K." class="rounded-circle mb-3" width="80" height="80">
+        <blockquote class="blockquote">
+          <p style="min-height: 72px;">"Great customer service and they fixed my brakes the same day. Highly recommend!"</p>
+          <footer class="blockquote-footer mt-2">Lisa K.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Work Showcase</h2>
+    <div class="row g-3">
+      <div class="col-md-4"><img src="images/showcase.webp" alt="garage" class="img-fluid rounded"></div>
+      <div class="col-md-4"><img src="images/showcase1.webp" alt="garage" class="img-fluid rounded"></div>
+      <div class="col-md-4"><img src="images/showcase10.webp" alt="garage" class="img-fluid rounded"></div>
+      <div class="col-md-4"><img src="images/showcase2.webp" alt="garage" class="img-fluid rounded"></div>
+      <div class="col-md-4"><img src="images/showcase3.webp" alt="garage" class="img-fluid rounded"></div>
+      <div class="col-md-4"><img src="images/showcase4.webp" alt="garage" class="img-fluid rounded"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Get In Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Top -->
+<section class="footer-top bg-dark text-light py-5">
+  <div class="container">
+    <div class="row">
+      <!-- About Us -->
+      <div class="col-md-4 mb-4">
+        <img src="images/QuickFixGarage.png" alt="QuickFix Auto Garage" style="max-width: 120px;" class="logo-img mb-3">
+        <p>
+          QuickFix Auto Garage is your trusted partner for reliable, fast, and affordable vehicle repairs. 
+          Serving our community with quality and care for over 10 years.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#reviews" class="text-light text-decoration-none">Reviews</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-md-4 mb-4">
+        <h5>Follow Us</h5>
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-0">© 2025 QuickFix Auto Garage. All rights reserved.</p>
+    <small class="credit-footer">Developed by <a href="https://jahidshah.com/">Jahid Shah</a></small>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
