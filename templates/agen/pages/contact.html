@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact — Your Company | Professional Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch to ask a question or request a consultation.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html"><!--FG1:slot:brand_name-->Your Company<!--/FG1:slot--></a>
+    <button class="navbar-toggler" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page-title -->
+<section class="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-1 text-white font-weight-bold font-primary"><!--FG1:slot:contact_page_title-->Contact us<!--/FG1:slot--></h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page-title -->
+
+<!-- contact -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mb-5 mb-lg-0">
+        <h2 class="mb-4"><!--FG1:slot:contact_heading-->Get in touch<!--/FG1:slot--></h2>
+        <ul class="list-unstyled contact-info">
+          <li class="mb-4">
+            <i class="ti-mobile text-gradient-primary"></i>
+            <span><!--FG1:slot:contact_phone-->Call us<!--/FG1:slot--></span>
+          </li>
+          <li class="mb-4">
+            <i class="ti-email text-gradient-primary"></i>
+            <span><!--FG1:slot:contact_email_text-->hello@example.com<!--/FG1:slot--></span>
+          </li>
+          <li class="mb-4">
+            <i class="ti-location-pin text-gradient-primary"></i>
+            <span><!--FG1:slot:contact_address-->123 Main Street, Suite 400, Your City<!--/FG1:slot--></span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <div class="card shadow p-4 p-lg-5">
+          <h3 class="mb-4"><!--FG1:slot:contact_form_heading-->Send us a message<!--/FG1:slot--></h3>
+          <form id="lead-form" novalidate>
+            <input type="text" name="name" class="form-control mb-4 px-0" placeholder="Your name" required>
+            <input type="tel" name="phone" class="form-control mb-4 px-0" placeholder="Phone" required>
+            <input type="email" name="email" class="form-control mb-4 px-0" placeholder="Email">
+            <textarea name="message" class="form-control mb-4 px-0" placeholder="How can we help?"></textarea>
+            <input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn-primary"><!--FG1:slot:lead_form_button-->Request a consultation<!--/FG1:slot--></button>
+            <p class="fg1-form-note" hidden></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- footer -->
+<footer class="bg-secondary">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-4 mb-5 mb-md-0">
+          <h4 class="text-white mb-4">About us</h4>
+          <p class="text-light mb-0"><!--FG1:slot:footer_blurb-->Professional services delivered with clarity, care and follow-through.<!--/FG1:slot--></p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <h4 class="text-white mb-4">Explore</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light d-block mb-3">Home</a></li>
+            <li><a href="services.html" class="text-light d-block mb-3">Services</a></li>
+            <li><a href="contact.html" class="text-light d-block mb-3">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6">
+          <h4 class="text-white mb-4">Contact</h4>
+          <ul class="list-unstyled">
+            <li class="text-light mb-3"><i class="ti-mobile mr-2"></i><!--FG1:slot:contact_phone-->Call us<!--/FG1:slot--></li>
+            <li class="text-light mb-3"><i class="ti-email mr-2"></i><!--FG1:slot:contact_email_text-->hello@example.com<!--/FG1:slot--></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-light mb-0"><!--FG1:slot:footer_copyright-->© Your Company. All rights reserved.<!--/FG1:slot--></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script>
+  window.FG1 = {
+    projectId: "{{FG1_PROJECT_ID}}",
+    formToken: "{{FG1_FORM_TOKEN}}",
+    factoryUrl: "{{FG1_FACTORY_URL}}",
+    approvalUrl: "{{FG1_APPROVAL_URL}}",
+    demo: false
+  };
+</script>
+<script src="site.js" defer></script>
+
+</body>
+</html>
