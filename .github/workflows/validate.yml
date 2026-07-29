@@ -12,3 +12,8 @@ jobs:
         with:
           node-version: 20
       - run: node tools/build-registry.mjs --check --require-screenshots
+      - name: No API keys anywhere (imports included)
+        run: |
+          if grep -rE "AIza[0-9A-Za-z_-]{35}|sk_live_[A-Za-z0-9]+|github_pat_[A-Za-z0-9_]{20,}" --include="*.html" --include="*.js" --include="*.css" .; then
+            echo "Secret-looking string found — scrub before committing"; exit 1
+          fi
