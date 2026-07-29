@@ -10,6 +10,10 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK = process.argv.includes("--check");
 const REQUIRE_SHOTS = process.argv.includes("--require-screenshots");
+// --skip-incomplete: folders without a manifest yet (mid-conversion) are
+// warned and skipped instead of failing. Never used in CI — main must always
+// be fully valid.
+const SKIP_INCOMPLETE = process.argv.includes("--skip-incomplete");
 
 const PLACEHOLDER_ALLOW = ["FG1_PROJECT_ID", "FG1_FORM_TOKEN", "FG1_FACTORY_URL", "FG1_APPROVAL_URL"];
 const PALETTE_VARS = [
@@ -41,7 +45,10 @@ function markerIds(html, kind) {
 function validateTemplate(key) {
   const dir = join(ROOT, "templates", key);
   const manifestPath = join(dir, "manifest.json");
-  if (!existsSync(manifestPath)) return fail(key, "manifest.json missing");
+  if (!existsSync(manifestPath)) {
+    if (SKIP_INCOMPLETE) { warn(key, "manifest.json missing — skipped (in progress)"); return null; }
+    return fail(key, "manifest.json missing");
+  }
   let m;
   try { m = JSON.parse(readFileSync(manifestPath, "utf8")); } catch (e) { return fail(key, `manifest.json invalid JSON: ${e.message}`); }
 
