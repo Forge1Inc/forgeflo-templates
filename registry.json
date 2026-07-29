@@ -343,10 +343,12 @@
         "pages/contact.html",
         "styles.css",
         "site.js",
+        "assets/office-team.webp",
+        "assets/office-meeting.webp",
         "assets/fonts/themify.woff",
         "assets/fonts/themify.ttf"
       ],
-      "imageNotes": "No raster images ship with this template: upstream Agen demo photos are demo-only (not licensed for redistribution per the upstream README), so hero, page-title, about and CTA bands are palette-driven CSS gradient bands. Customer photos ride the existing assets pipeline.",
+      "imageNotes": "Hero, page-title and CTA bands remain palette-driven CSS gradient bands (upstream Agen demo photos were demo-only and never shipped). Two CC0 photos (provenance in SOURCE.md) are placed on index.html without breaking the gradient identity: office-team.webp sits in the about band as a gradient-framed photo column (stacks under the text on mobile), and office-meeting.webp is the feature band's background photo underneath the template's own secondary/accent gradient veil (layout unchanged; text contrast preserved). Customer photos ride the existing assets pipeline.",
       "source": {
         "name": "Agen",
         "author": "Themefisher",
@@ -728,12 +730,12 @@
         "pages/contact.html",
         "styles.css",
         "site.js",
-        "assets/gallery01.jpg",
+        "assets/salon-chairs.webp",
+        "assets/salon-interior.webp",
         "assets/gallery02.jpg",
-        "assets/gallery03.jpg",
         "assets/gallery04.jpg"
       ],
-      "imageNotes": "Aurelia ships photo-free by design — the black/gold luxury look is built from typography, thin gold rules and CSS gradient sheens. The only images are gallery01.jpg–gallery04.jpg in the gated photo_gallery band on index.html: original generated abstract gold-on-black art panels (not stock photography) acting as elegant placeholders. The customer's portfolio photos (their client work) replace them via the assets pipeline — keep the same four filenames; portrait 4:5 crops display best. No logo image is used; the wordmark is the site_title slot rendered in spaced serif capitals.",
+      "imageNotes": "salon-interior.webp: wide salon-room photo (styling stations, mirrors) used twice on index.html — as the framed about-band image (21:9 crop) and in the gated photo_gallery band (4:5 crop, object-position left so a different part of the room shows). salon-chairs.webp: portrait shot of styling chairs by a window, first tile of the gallery band. Both are CC0 photos (see SOURCE.md) and sit under a subtle CSS dark/gold veil (.photo-veil) so they stay inside the black/gold palette. gallery02.jpg and gallery04.jpg are original generated abstract gold-on-black art panels completing the 4-tile gallery. Customer portfolio photos replace the gallery images via the assets pipeline — portrait 4:5 crops display best. No logo image is used; the wordmark is the site_title slot rendered in spaced serif capitals.",
       "source": {
         "name": "Aurelia",
         "author": "Forge 1 Inc. (original)",
@@ -1905,9 +1907,8 @@
         "LICENSE",
         "assets/banner.jpg",
         "assets/pic01.jpg",
-        "assets/pic02.jpg",
-        "assets/pic03.jpg",
-        "assets/pic04.jpg",
+        "assets/garden-trowel.webp",
+        "assets/painter-roller.webp",
         "assets/pic07.jpg",
         "assets/overlay.png",
         "assets/arrow.svg",
@@ -1915,7 +1916,7 @@
         "assets/fonts/fa-brands-400.woff2",
         "assets/fonts/fa-regular-400.woff2"
       ],
-      "imageNotes": "banner.jpg: full-width hero background behind the dark overlay; pic01.jpg: small square accent image beside the hero text; pic02.jpg/pic03.jpg/pic04.jpg: tall spotlight background photos (about, services teaser, quality teaser); pic07.jpg: wide photo on the services page. All shipped images are the soft gradient placeholders from the original template — swap in real cleaning/landscaping/renovation photos of similar dimensions via the assets pipeline.",
+      "imageNotes": "banner.jpg: full-width hero background behind the dark overlay; pic01.jpg: small square accent image beside the hero text (gradient placeholder); garden-trowel.webp: CC0 photo of a garden trowel in a flower bed — parallax background of spotlight one (about); painter-roller.webp: CC0 photo of a decorator rolling paint — parallax background of spotlight two (services teaser); the former third spotlight is now an image-free accent band using the template's own wrapper style. pic07.jpg: wide gradient placeholder photo on the services page. Photo provenance in SOURCE.md; swap in the customer's cleaning/landscaping/renovation photos of similar dimensions via the assets pipeline.",
       "source": {
         "name": "Landed",
         "author": "HTML5 UP (ajlkn)",
@@ -2179,11 +2180,12 @@
         "site.js",
         "assets/header-bg.webp",
         "assets/header-bg-mobile.webp",
+        "assets/workshop-oil-check.webp",
         "assets/fonts/inter-latin.woff2",
         "assets/fonts/montserrat-latin.woff2",
         "assets/fonts/boxicons.woff2"
       ],
-      "imageNotes": "header-bg.webp: dark workshop scene used as the hero backdrop on all pages (desktop); header-bg-mobile.webp: smaller crop of the same scene for viewports up to 1024px. Both sit under a primary-colour multiply overlay, so near-monochrome garage/tools photos work best.",
+      "imageNotes": "header-bg.webp: dark workshop scene used as the hero backdrop on all pages (desktop); header-bg-mobile.webp: smaller crop of the same scene for viewports up to 1024px. Both sit under a primary-colour multiply overlay, so near-monochrome garage/tools photos work best. workshop-oil-check.webp: CC0 photo of a mechanic checking oil in an engine bay (provenance in SOURCE.md), shown as the about-section image on index.html (3:2 crop, stacks above the text on mobile) — swap for the customer's own shop photo via the assets pipeline.",
       "source": {
         "name": "Car Mechanic Shop",
         "author": "Saqib Islam",
@@ -2519,11 +2521,9 @@
         "assets/tile04.jpg",
         "assets/tile05.jpg",
         "assets/tile06.jpg",
-        "assets/services-main.jpg",
-        "assets/gallery01.jpg",
-        "assets/gallery02.jpg",
-        "assets/gallery03.jpg",
-        "assets/gallery04.jpg",
+        "assets/spa-facial.webp",
+        "assets/spa-manicure-hand.webp",
+        "assets/spa-manicure-detail.webp",
         "assets/fonts/fa-solid-900.woff2",
         "assets/fonts/fa-solid-900.woff",
         "assets/fonts/fa-regular-400.woff2",
@@ -2531,7 +2531,7 @@
         "assets/fonts/fa-brands-400.woff2",
         "assets/fonts/fa-brands-400.woff"
       ],
-      "imageNotes": "All photos are the soft abstract blur images shipped in the Phantom CC-BY zip — safe neutral placeholders. tile01–tile06.jpg sit behind the coloured homepage service tiles (the palette wash covers them, so any photo works); services-main.jpg is the wide banner on services.html; gallery01–gallery04.jpg fill the gated gallery band; logo.svg is a generic diamond mark — swap for the client's logo via the assets pipeline.",
+      "imageNotes": "tile01–tile06.jpg sit behind the coloured homepage service tiles (the palette wash covers them, so any photo works) — these stay the original Phantom abstract blurs by design. Real CC0 photos (provenance in SOURCE.md) on services.html: spa-facial.webp is the wide banner (cropped to the template's 1152x326 band via CSS object-fit, 16:9 on small screens) and also the first tile of the gated 3-image gallery band; spa-manicure-hand.webp and spa-manicure-detail.webp complete the gallery. Customer photos replace them via the assets pipeline (near-square crops display best in the gallery). logo.svg is a generic diamond mark — swap for the client's logo via the assets pipeline.",
       "source": {
         "name": "Phantom",
         "author": "HTML5 UP (ajlkn)",
