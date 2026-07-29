@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact — ForgeConnect CRM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch or book a demo of a custom CRM built around your workflow.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="fc-nav">
+  <div class="fc-container fc-nav-inner">
+    <a class="fc-brand" href="index.html">
+      <span class="fc-brand-mark" aria-hidden="true"></span>
+      <span class="fc-brand-name"><!--FG1:slot:product_name-->ForgeConnect CRM<!--/FG1:slot--></span>
+    </a>
+    <button class="fc-nav-toggle" type="button" aria-expanded="false" aria-controls="fc-menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="fc-menu" id="fc-menu">
+      <a class="fc-menu-link" href="index.html">Home</a>
+      <a class="fc-menu-link" href="features.html">Features</a>
+      <a class="fc-menu-link is-active" href="contact.html">Contact</a>
+      <a class="fc-btn fc-btn-primary fc-btn-sm" href="contact.html">Book a demo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- page head -->
+<section class="fc-page-head">
+  <div class="fc-container">
+    <h1><!--FG1:slot:contact_page_title-->Contact<!--/FG1:slot--></h1>
+  </div>
+</section>
+<!-- /page head -->
+
+<!-- contact details + lead form -->
+<section class="fc-section">
+  <div class="fc-container fc-contact">
+    <div class="fc-contact-details">
+      <h2><!--FG1:slot:contact_heading-->Talk to us<!--/FG1:slot--></h2>
+      <ul class="fc-contact-list">
+        <li>
+          <span class="fc-contact-ico" aria-hidden="true"></span>
+          <span><!--FG1:slot:contact_phone-->Call us<!--/FG1:slot--></span>
+        </li>
+        <li>
+          <span class="fc-contact-ico" aria-hidden="true"></span>
+          <span><!--FG1:slot:contact_email_text-->hello@example.com<!--/FG1:slot--></span>
+        </li>
+        <li>
+          <span class="fc-contact-ico" aria-hidden="true"></span>
+          <span><!--FG1:slot:contact_address-->123 Main Street, Suite 400, Your City<!--/FG1:slot--></span>
+        </li>
+      </ul>
+    </div>
+    <div class="fc-panel fc-form-panel">
+      <h2><!--FG1:slot:contact_form_heading-->Send us a message<!--/FG1:slot--></h2>
+      <form id="lead-form" class="fc-form" novalidate>
+        <input type="text" name="name" class="fc-input" placeholder="Your name" aria-label="Your name" required>
+        <input type="tel" name="phone" class="fc-input" placeholder="Phone" aria-label="Phone" required>
+        <input type="email" name="email" class="fc-input" placeholder="Email" aria-label="Email">
+        <textarea name="message" class="fc-input fc-textarea" placeholder="How can we help?" aria-label="How can we help?"></textarea>
+        <input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="fc-btn fc-btn-primary"><!--FG1:slot:lead_form_button-->Send message<!--/FG1:slot--></button>
+        <p class="fg1-form-note" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- /contact details + lead form -->
+
+<!--FG1:section:booking_form-->
+<!-- book a demo -->
+<section class="fc-section fc-book">
+  <div class="fc-container">
+    <div class="fc-cta-panel fc-book-panel">
+      <h2><!--FG1:slot:booking_heading-->Book a demo<!--/FG1:slot--></h2>
+      <p><!--FG1:slot:booking_blurb-->Tell us a little about your business and we&rsquo;ll set up a walkthrough built around workflows like yours.<!--/FG1:slot--></p>
+      <form id="booking-form" class="fc-form" novalidate>
+        <div class="fc-form-row">
+          <input type="text" name="name" class="fc-input" placeholder="Your name" aria-label="Your name" required>
+          <input type="tel" name="phone" class="fc-input" placeholder="Phone" aria-label="Phone" required>
+          <input type="text" name="topic" class="fc-input" placeholder="What should the demo focus on?" aria-label="What should the demo focus on?">
+        </div>
+        <input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="fc-btn fc-btn-primary">Book a demo</button>
+        <p class="fg1-form-note" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- /book a demo -->
+<!--/FG1:section-->
+
+</main>
+
+<!-- footer -->
+<footer class="fc-footer">
+  <div class="fc-container">
+    <div class="fc-footer-grid">
+      <div class="fc-footer-about">
+        <a class="fc-brand" href="index.html">
+          <span class="fc-brand-mark" aria-hidden="true"></span>
+          <span class="fc-brand-name"><!--FG1:slot:product_name-->ForgeConnect CRM<!--/FG1:slot--></span>
+        </a>
+        <p class="fc-footer-blurb"><!--FG1:slot:footer_blurb-->Custom CRMs and software platforms — designed, built and supported around the way you work.<!--/FG1:slot--></p>
+      </div>
+      <div class="fc-footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fc-footer-col">
+        <h4>Contact</h4>
+        <ul class="fc-footer-contact">
+          <li><!--FG1:slot:contact_phone-->Call us<!--/FG1:slot--></li>
+          <li><!--FG1:slot:contact_email_text-->hello@example.com<!--/FG1:slot--></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fc-footer-bottom">
+      <p><!--FG1:slot:footer_copyright-->© ForgeConnect CRM. All rights reserved.<!--/FG1:slot--></p>
+      <p class="fc-credit"><!--FG1:slot:credit_line-->Custom CRM options by ForgeFlo / ForgeConnect<!--/FG1:slot--></p>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script>
+  window.FG1 = {
+    projectId: "{{FG1_PROJECT_ID}}",
+    formToken: "{{FG1_FORM_TOKEN}}",
+    factoryUrl: "{{FG1_FACTORY_URL}}",
+    approvalUrl: "{{FG1_APPROVAL_URL}}",
+    demo: false
+  };
+</script>
+<script src="site.js" defer></script>
+
+</body>
+</html>

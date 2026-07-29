@@ -1,0 +1,399 @@
+{
+  "key": "forgeconnect",
+  "name": "ForgeConnect",
+  "version": "1.0.0",
+  "description": "Dark SaaS site for custom automated CRMs and software platforms — app-frame hero, demo-ready.",
+  "verticals": [
+    "tech"
+  ],
+  "pages": [
+    {
+      "file": "index.html",
+      "title": "Home",
+      "core": true
+    },
+    {
+      "file": "features.html",
+      "title": "Features",
+      "core": true
+    },
+    {
+      "file": "contact.html",
+      "title": "Contact",
+      "core": true
+    }
+  ],
+  "slots": [
+    {
+      "id": "product_name",
+      "page": "index.html",
+      "type": "text",
+      "description": "Product / business name shown as the nav brand and footer brand",
+      "maxLen": 40
+    },
+    {
+      "id": "hero_eyebrow",
+      "page": "index.html",
+      "type": "text",
+      "description": "Short uppercase eyebrow label in the badge above the hero headline",
+      "maxLen": 40
+    },
+    {
+      "id": "hero_title",
+      "page": "index.html",
+      "type": "text",
+      "description": "Main headline, punchy, no punctuation at end",
+      "maxLen": 90
+    },
+    {
+      "id": "hero_subtitle",
+      "page": "index.html",
+      "type": "text",
+      "description": "One-sentence supporting pitch under the headline",
+      "maxLen": 180
+    },
+    {
+      "id": "feature_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the home-page feature trio section (h2)",
+      "maxLen": 60
+    },
+    {
+      "id": "feature_list",
+      "page": "index.html",
+      "type": "list",
+      "description": "Home-page feature trio, exactly 3 items; each item: `<div class=\"fc-card\"><span class=\"fc-card-icon\" aria-hidden=\"true\"></span><h3>Feature name</h3><p>One-sentence description.</p></div>`"
+    },
+    {
+      "id": "how_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the how-it-works band (h2)",
+      "maxLen": 60
+    },
+    {
+      "id": "how_steps",
+      "page": "index.html",
+      "type": "list",
+      "description": "How-it-works steps, exactly 3 items; step numbers are added automatically by CSS counters; each item: `<li class=\"fc-step\"><h3>Step title</h3><p>One-sentence description.</p></li>`"
+    },
+    {
+      "id": "about_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the about band (h2)",
+      "maxLen": 60
+    },
+    {
+      "id": "about_body",
+      "page": "index.html",
+      "type": "text",
+      "description": "Two-to-three sentence description of the business and its approach — no invented stats, years or awards",
+      "maxLen": 420
+    },
+    {
+      "id": "security_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the security / integrations side panel (h3)",
+      "maxLen": 60
+    },
+    {
+      "id": "security_blurb",
+      "page": "index.html",
+      "type": "text",
+      "description": "One-to-two sentence security and integrations blurb in the side panel — generic capability language only",
+      "maxLen": 260
+    },
+    {
+      "id": "cta_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the call-to-action band (h2)",
+      "maxLen": 60
+    },
+    {
+      "id": "cta_text",
+      "page": "index.html",
+      "type": "text",
+      "description": "One-sentence call-to-action line under the CTA heading",
+      "maxLen": 140
+    },
+    {
+      "id": "newsletter_heading",
+      "page": "index.html",
+      "type": "text",
+      "description": "Heading of the newsletter band (add-on gated)",
+      "maxLen": 50
+    },
+    {
+      "id": "newsletter_blurb",
+      "page": "index.html",
+      "type": "text",
+      "description": "One-sentence blurb next to the newsletter signup field",
+      "maxLen": 160
+    },
+    {
+      "id": "footer_blurb",
+      "page": "index.html",
+      "type": "text",
+      "description": "Short footer description of the business",
+      "maxLen": 200
+    },
+    {
+      "id": "contact_phone",
+      "page": "index.html",
+      "type": "text",
+      "description": "Phone number as displayed text (footer contact list) — fill with confirmed data only",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_email_text",
+      "page": "index.html",
+      "type": "text",
+      "description": "Email address as displayed text (footer contact list) — fill with confirmed data only",
+      "maxLen": 60
+    },
+    {
+      "id": "footer_copyright",
+      "page": "index.html",
+      "type": "text",
+      "description": "Copyright line in the footer bottom bar",
+      "maxLen": 100
+    },
+    {
+      "id": "credit_line",
+      "page": "index.html",
+      "type": "text",
+      "description": "Small credit line in the footer bottom bar",
+      "maxLen": 100
+    },
+    {
+      "id": "product_name",
+      "page": "features.html",
+      "type": "text",
+      "description": "Product / business name shown as the nav brand and footer brand",
+      "maxLen": 40
+    },
+    {
+      "id": "features_page_title",
+      "page": "features.html",
+      "type": "text",
+      "description": "Features page title (h1)",
+      "maxLen": 40
+    },
+    {
+      "id": "services_intro",
+      "page": "features.html",
+      "type": "text",
+      "description": "Intro paragraph under the Features page title",
+      "maxLen": 220
+    },
+    {
+      "id": "service_list",
+      "page": "features.html",
+      "type": "list",
+      "description": "Feature cards, 3 or 6 items keep the grid full; each item: `<div class=\"fc-card\"><span class=\"fc-card-icon\" aria-hidden=\"true\"></span><h3>Feature name</h3><p>One-sentence description.</p></div>`"
+    },
+    {
+      "id": "cta_heading",
+      "page": "features.html",
+      "type": "text",
+      "description": "Heading of the call-to-action band (h2), same content as on Home",
+      "maxLen": 60
+    },
+    {
+      "id": "cta_text",
+      "page": "features.html",
+      "type": "text",
+      "description": "One-sentence call-to-action line, same content as on Home",
+      "maxLen": 140
+    },
+    {
+      "id": "footer_blurb",
+      "page": "features.html",
+      "type": "text",
+      "description": "Short footer description of the business",
+      "maxLen": 200
+    },
+    {
+      "id": "contact_phone",
+      "page": "features.html",
+      "type": "text",
+      "description": "Phone number as displayed text (footer contact list) — fill with confirmed data only",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_email_text",
+      "page": "features.html",
+      "type": "text",
+      "description": "Email address as displayed text (footer contact list) — fill with confirmed data only",
+      "maxLen": 60
+    },
+    {
+      "id": "footer_copyright",
+      "page": "features.html",
+      "type": "text",
+      "description": "Copyright line in the footer bottom bar",
+      "maxLen": 100
+    },
+    {
+      "id": "credit_line",
+      "page": "features.html",
+      "type": "text",
+      "description": "Small credit line in the footer bottom bar",
+      "maxLen": 100
+    },
+    {
+      "id": "product_name",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Product / business name shown as the nav brand and footer brand",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_page_title",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Contact page title (h1)",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Heading above the contact details list (h2)",
+      "maxLen": 60
+    },
+    {
+      "id": "contact_phone",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Phone number as displayed text (contact list and footer) — fill with confirmed data only",
+      "maxLen": 40
+    },
+    {
+      "id": "contact_email_text",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Email address as displayed text (contact list and footer) — fill with confirmed data only",
+      "maxLen": 60
+    },
+    {
+      "id": "contact_address",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Street address as displayed text — fill with confirmed data only",
+      "maxLen": 120
+    },
+    {
+      "id": "contact_form_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Heading of the lead form panel (h2)",
+      "maxLen": 60
+    },
+    {
+      "id": "lead_form_button",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Submit button label of the lead form",
+      "maxLen": 40
+    },
+    {
+      "id": "booking_heading",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Heading of the book-a-demo band (add-on gated)",
+      "maxLen": 60
+    },
+    {
+      "id": "booking_blurb",
+      "page": "contact.html",
+      "type": "text",
+      "description": "One-sentence blurb above the demo booking form",
+      "maxLen": 220
+    },
+    {
+      "id": "footer_blurb",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Short footer description of the business",
+      "maxLen": 200
+    },
+    {
+      "id": "footer_copyright",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Copyright line in the footer bottom bar",
+      "maxLen": 100
+    },
+    {
+      "id": "credit_line",
+      "page": "contact.html",
+      "type": "text",
+      "description": "Small credit line in the footer bottom bar",
+      "maxLen": 100
+    },
+    {
+      "id": "tour_heading",
+      "page": "features.html",
+      "type": "text",
+      "description": "Heading above the product screenshot tour",
+      "maxLen": 60
+    },
+    {
+      "id": "tour_blurb",
+      "page": "features.html",
+      "type": "text",
+      "description": "One-sentence intro above the product screenshots",
+      "maxLen": 220
+    }
+  ],
+  "sections": [
+    {
+      "id": "newsletter_signup",
+      "addOnCode": "newsletter_signup",
+      "page": "index.html"
+    },
+    {
+      "id": "booking_form",
+      "addOnCode": "booking_form",
+      "page": "contact.html"
+    }
+  ],
+  "paletteVars": {
+    "--fg1-primary": "#4f7cff",
+    "--fg1-secondary": "#1c2e66",
+    "--fg1-accent": "#7ea2ff",
+    "--fg1-bg": "#070b16",
+    "--fg1-surface": "#0d1526",
+    "--fg1-text": "#eaf0ff",
+    "--fg1-muted": "#93a0bf",
+    "--fg1-accent-text": "#ffffff",
+    "--fg1-heading-font": "\"Inter Tight\", \"Inter\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+    "--fg1-body-font": "\"Inter\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+    "--fg1-radius": "14px"
+  },
+  "files": [
+    "pages/index.html",
+    "pages/features.html",
+    "pages/contact.html",
+    "styles.css",
+    "site.js",
+    "assets/app-dashboard.webp",
+    "assets/app-pipeline.webp",
+    "assets/app-lead-detail.webp"
+  ],
+  "imageNotes": "app-dashboard/app-pipeline/app-lead-detail.webp: real ForgeConnect product mockups (owner-supplied, fictional demo data only — Acme Corp etc.). Swap the files to update the shots; hero uses app-dashboard inside .fc-app-frame.",
+  "source": {
+    "name": "ForgeConnect",
+    "author": "Forge 1 Inc. (original)",
+    "url": "https://github.com/Forge1Inc/forgeflo-templates",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/Forge1Inc/forgeflo-templates/blob/main/LICENSE",
+    "fetchedAt": "2026-07-28"
+  },
+  "attribution": null
+}
