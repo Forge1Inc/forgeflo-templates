@@ -976,3 +976,20 @@ textarea:focus {
 	color: var(--au-text-dim);
 	font-weight: 300;
 }
+
+/* ------------------------------------------------------- hero owner logo */
+
+.hero-logo {
+	display: flex;
+	justify-content: center;
+}
+
+.hero-logo:not(:empty) { margin-bottom: 2.2rem; }
+
+.hero-logo .fg1-logo {
+	height: clamp(96px, 15vw, 170px);
+	width: auto;
+	margin: 0;
+	border-radius: 4px;
+	box-shadow: 0 18px 60px color-mix(in srgb, var(--fg1-accent) 18%, transparent);
+}
