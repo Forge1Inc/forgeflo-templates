@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+	Aurelia — black & gold luxury salon template
+	Original work by Forge 1 Inc. (no upstream import), MIT licensed.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact — Aurelia</title>
+	<meta name="description" content="Contact the atelier — send an enquiry for appointments and consultations, or find our details and opening hours.">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="shell header-inner">
+			<a class="wordmark" href="index.html"><!--FG1:slot:site_title-->Aurelia<!--/FG1:slot--></a>
+			<nav class="site-nav" id="site-nav" aria-label="Primary">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html" aria-current="page">Contact</a></li>
+				</ul>
+			</nav>
+			<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+				<span>Menu</span>
+				<span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+			</button>
+		</div>
+	</header>
+
+	<main id="main">
+
+		<section class="page-head">
+			<div class="shell narrow">
+				<p class="eyebrow">Contact</p>
+				<h1 class="page-title"><!--FG1:slot:contact_heading-->Contact the atelier<!--/FG1:slot--></h1>
+				<p class="page-lede"><!--FG1:slot:contact_intro-->For appointments, consultations and general enquiries, send a message below — we reply personally to every request.<!--/FG1:slot--></p>
+			</div>
+		</section>
+
+		<section class="section contact-section">
+			<div class="shell contact-grid">
+
+				<div class="contact-form-col">
+					<h2 class="section-title small"><!--FG1:slot:lead_form_heading-->Send an enquiry<!--/FG1:slot--></h2>
+					<form id="lead-form" class="lead-form" novalidate>
+						<div class="field field-row">
+							<input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+							<input type="tel" name="phone" placeholder="Phone" aria-label="Phone" required>
+						</div>
+						<div class="field">
+							<input type="email" name="email" placeholder="Email" aria-label="Email">
+						</div>
+						<div class="field">
+							<textarea name="message" placeholder="How can we help?" aria-label="How can we help?"></textarea>
+						</div>
+						<input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+						<button type="submit" class="btn btn-gold"><!--FG1:slot:lead_form_button-->Request an appointment<!--/FG1:slot--></button>
+						<p class="fg1-form-note" hidden></p>
+					</form>
+				</div>
+
+				<aside class="contact-details-col">
+					<h2 class="section-title small"><!--FG1:slot:contact_details_heading-->The details<!--/FG1:slot--></h2>
+					<dl class="details-list">
+						<div class="details-item">
+							<dt>Telephone</dt>
+							<dd><!--FG1:slot:contact_phone-->Call us to book<!--/FG1:slot--></dd>
+						</div>
+						<div class="details-item">
+							<dt>Email</dt>
+							<dd><!--FG1:slot:contact_email_text-->hello@example.com<!--/FG1:slot--></dd>
+						</div>
+						<div class="details-item">
+							<dt>Atelier</dt>
+							<dd><!--FG1:slot:contact_address-->Visit us in the heart of town<!--/FG1:slot--></dd>
+						</div>
+						<div class="details-item">
+							<dt>Hours</dt>
+							<dd><!--FG1:slot:contact_hours-->Open by appointment<!--/FG1:slot--></dd>
+						</div>
+					</dl>
+				</aside>
+
+			</div>
+		</section>
+
+		<!--FG1:section:booking_form-->
+		<section class="section on-surface booking">
+			<div class="shell narrow center">
+				<div class="ornament" aria-hidden="true"><span></span></div>
+				<h2 class="section-title"><!--FG1:slot:booking_heading-->Prefer a set time?<!--/FG1:slot--></h2>
+				<p class="section-lede"><!--FG1:slot:booking_text-->Share your preferred day and hour in your message and we will confirm your reservation personally.<!--/FG1:slot--></p>
+				<p class="band-action">
+					<a class="btn btn-outline" href="#lead-form"><!--FG1:slot:booking_button-->Request a reservation<!--/FG1:slot--></a>
+				</p>
+			</div>
+		</section>
+		<!--/FG1:section-->
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="shell">
+			<p class="footer-blurb"><!--FG1:slot:footer_blurb-->An intimate black-and-gold hair atelier devoted to precision cutting, dimensional colour and unhurried, personal service.<!--/FG1:slot--></p>
+			<ul class="footer-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<p class="footer-copy">&copy; <!--FG1:slot:footer_copyright-->Aurelia<!--/FG1:slot-->. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- FG1 bootstrap -->
+	<script>
+		window.FG1 = {
+			projectId: "{{FG1_PROJECT_ID}}",
+			formToken: "{{FG1_FORM_TOKEN}}",
+			factoryUrl: "{{FG1_FACTORY_URL}}",
+			approvalUrl: "{{FG1_APPROVAL_URL}}",
+			demo: false
+		};
+	</script>
+	<script src="site.js" defer></script>
+
+</body>
+</html>

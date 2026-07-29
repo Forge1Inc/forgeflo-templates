@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+	Aurelia — black & gold luxury salon template
+	Original work by Forge 1 Inc. (no upstream import), MIT licensed.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services — Aurelia</title>
+	<meta name="description" content="The service menu — precision cutting, dimensional colour, treatments and occasion styling, planned around your hair at consultation.">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="shell header-inner">
+			<a class="wordmark" href="index.html"><!--FG1:slot:site_title-->Aurelia<!--/FG1:slot--></a>
+			<nav class="site-nav" id="site-nav" aria-label="Primary">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html" aria-current="page">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+				<span>Menu</span>
+				<span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+			</button>
+		</div>
+	</header>
+
+	<main id="main">
+
+		<section class="page-head">
+			<div class="shell narrow">
+				<p class="eyebrow">Services</p>
+				<h1 class="page-title"><!--FG1:slot:services_heading-->The service menu<!--/FG1:slot--></h1>
+				<p class="page-lede"><!--FG1:slot:services_intro-->Every service begins with a personal consultation, so recommendations and timing reflect your hair — not a formula. The menu is kept deliberately focused.<!--/FG1:slot--></p>
+			</div>
+		</section>
+
+		<section class="section menu-section">
+			<div class="shell narrow">
+				<ol class="service-list service-menu">
+					<!--FG1:slot:service_list-->
+					<li class="service-item">
+						<h3 class="service-name">Consultation &amp; Hair Diagnosis</h3>
+						<p class="service-desc">A one-to-one conversation about your hair's history, texture and ambitions — the starting point of every visit.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Precision Cut &amp; Finish</h3>
+						<p class="service-desc">Sculpted to your features and finished for movement, longevity and effortless day-to-day wear.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Dimensional Colour</h3>
+						<p class="service-desc">Full colour, glossing and tonal work with a naturally rich, light-catching finish.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Balayage &amp; Lived-In Lightening</h3>
+						<p class="service-desc">Hand-painted light and depth, placed where the sun would find it, growing out gracefully.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Treatments &amp; Hair Health</h3>
+						<p class="service-desc">Restorative rituals to strengthen, smooth and bring back lasting shine.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Occasion &amp; Editorial Styling</h3>
+						<p class="service-desc">Considered styling for weddings, events and photography — polished, secure and photogenic.</p>
+					</li>
+					<!--/FG1:slot-->
+				</ol>
+				<p class="menu-note"><!--FG1:slot:services_note-->Timings and recommendations are confirmed at consultation, so every appointment is planned around your hair.<!--/FG1:slot--></p>
+				<div class="center">
+					<a class="btn btn-gold" href="contact.html"><!--FG1:slot:services_cta-->Enquire about an appointment<!--/FG1:slot--></a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="shell">
+			<p class="footer-blurb"><!--FG1:slot:footer_blurb-->An intimate black-and-gold hair atelier devoted to precision cutting, dimensional colour and unhurried, personal service.<!--/FG1:slot--></p>
+			<ul class="footer-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<p class="footer-copy">&copy; <!--FG1:slot:footer_copyright-->Aurelia<!--/FG1:slot-->. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- FG1 bootstrap -->
+	<script>
+		window.FG1 = {
+			projectId: "{{FG1_PROJECT_ID}}",
+			formToken: "{{FG1_FORM_TOKEN}}",
+			factoryUrl: "{{FG1_FACTORY_URL}}",
+			approvalUrl: "{{FG1_APPROVAL_URL}}",
+			demo: false
+		};
+	</script>
+	<script src="site.js" defer></script>
+
+</body>
+</html>

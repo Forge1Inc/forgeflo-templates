@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+	Aurelia — black & gold luxury salon template
+	Original work by Forge 1 Inc. (no upstream import), MIT licensed.
+	Built FORGEIFY-native: content slotted, palette variable-ized, FG1 lead form wired.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aurelia — Luxury Hair Atelier</title>
+	<meta name="description" content="A black-and-gold luxury hair atelier — precision cutting, dimensional colour and unhurried, personal service.">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="shell header-inner">
+			<a class="wordmark" href="index.html"><!--FG1:slot:site_title-->Aurelia<!--/FG1:slot--></a>
+			<nav class="site-nav" id="site-nav" aria-label="Primary">
+				<ul>
+					<li><a href="index.html" aria-current="page">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+				<span>Menu</span>
+				<span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+			</button>
+		</div>
+	</header>
+
+	<main id="main">
+
+		<!-- Hero -->
+		<section class="hero">
+			<div class="shell hero-inner">
+				<p class="eyebrow"><!--FG1:slot:hero_eyebrow-->Luxury hair atelier<!--/FG1:slot--></p>
+				<h1 class="hero-title"><!--FG1:slot:hero_title-->Hair, elevated to an art<!--/FG1:slot--></h1>
+				<p class="hero-sub"><!--FG1:slot:hero_subtitle-->A private, unhurried studio experience — precision cutting, dimensional colour and considered styling, tailored entirely to you.<!--/FG1:slot--></p>
+				<div class="hero-actions">
+					<a class="btn btn-gold" href="contact.html"><!--FG1:slot:cta_text-->Reserve your consultation<!--/FG1:slot--></a>
+					<a class="link-quiet" href="services.html">View the service menu</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Signature services -->
+		<section class="section signature">
+			<div class="shell">
+				<header class="section-head">
+					<h2 class="eyebrow"><!--FG1:slot:signature_heading-->Signature services<!--/FG1:slot--></h2>
+					<p class="section-lede"><!--FG1:slot:signature_intro-->Three disciplines, practised with patience and precision.<!--/FG1:slot--></p>
+				</header>
+				<ol class="service-list signature-grid">
+					<!--FG1:slot:service_list-->
+					<li class="service-item">
+						<h3 class="service-name">Precision Cut &amp; Finish</h3>
+						<p class="service-desc">A sculpted cut designed around your features, finished for movement and easy everyday wear.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Dimensional Colour &amp; Balayage</h3>
+						<p class="service-desc">Hand-painted tones and depth, blended for a naturally luminous result that grows out gracefully.</p>
+					</li>
+					<li class="service-item">
+						<h3 class="service-name">Occasion &amp; Editorial Styling</h3>
+						<p class="service-desc">Polished styling for weddings, events and moments that deserve to be remembered.</p>
+					</li>
+					<!--/FG1:slot-->
+				</ol>
+			</div>
+		</section>
+
+		<!-- Philosophy -->
+		<section class="section on-surface philosophy">
+			<div class="shell narrow center">
+				<div class="ornament" aria-hidden="true"><span></span></div>
+				<h2 class="eyebrow"><!--FG1:slot:philosophy_heading-->Our philosophy<!--/FG1:slot--></h2>
+				<blockquote class="philosophy-quote">
+					<p><!--FG1:slot:philosophy_body-->True luxury is time and attention — one guest, one chair, and a stylist wholly devoted to the details.<!--/FG1:slot--></p>
+				</blockquote>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section class="section about">
+			<div class="shell about-grid">
+				<div class="about-col-head">
+					<h2 class="section-title"><!--FG1:slot:about_heading-->The atelier<!--/FG1:slot--></h2>
+				</div>
+				<div class="about-col-body">
+					<p class="about-body"><!--FG1:slot:about_body-->Aurelia is an intimate studio built around calm, privacy and craft. Every appointment begins with a considered consultation and ends with hair that works effortlessly between visits — no rush, no noise, simply careful work done well.<!--/FG1:slot--></p>
+				</div>
+			</div>
+		</section>
+
+		<!--FG1:section:photo_gallery-->
+		<section class="section on-surface gallery">
+			<div class="shell">
+				<header class="section-head">
+					<h2 class="section-title"><!--FG1:slot:gallery_heading-->Selected work<!--/FG1:slot--></h2>
+					<p class="section-lede"><!--FG1:slot:gallery_intro-->A quiet look at recent cuts, colour and styling from the chair.<!--/FG1:slot--></p>
+				</header>
+				<div class="gallery-grid">
+					<figure class="gallery-frame"><img src="assets/gallery01.jpg" alt="Portfolio placeholder — abstract gold artwork"></figure>
+					<figure class="gallery-frame"><img src="assets/gallery02.jpg" alt="Portfolio placeholder — abstract gold artwork"></figure>
+					<figure class="gallery-frame"><img src="assets/gallery03.jpg" alt="Portfolio placeholder — abstract gold artwork"></figure>
+					<figure class="gallery-frame"><img src="assets/gallery04.jpg" alt="Portfolio placeholder — abstract gold artwork"></figure>
+				</div>
+			</div>
+		</section>
+		<!--/FG1:section-->
+
+		<!--FG1:section:newsletter_signup-->
+		<section class="section newsletter">
+			<div class="shell narrow center">
+				<h2 class="section-title"><!--FG1:slot:newsletter_heading-->The private list<!--/FG1:slot--></h2>
+				<p class="section-lede"><!--FG1:slot:newsletter_text-->Occasional notes on openings, seasonal care and studio news — thoughtfully infrequent.<!--/FG1:slot--></p>
+				<form id="newsletter-form" class="newsletter-form" novalidate>
+					<div class="newsletter-row">
+						<label class="visually-hidden" for="newsletter-email">Email address</label>
+						<input id="newsletter-email" type="email" name="email" placeholder="Your email address" required>
+						<button type="submit" class="btn btn-gold"><!--FG1:slot:newsletter_button-->Join the list<!--/FG1:slot--></button>
+					</div>
+					<input type="text" name="company_website" class="fg1-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+					<p class="fg1-form-note" hidden></p>
+				</form>
+			</div>
+		</section>
+		<!--/FG1:section-->
+
+		<!-- Closing call to action -->
+		<section class="section on-surface closing">
+			<div class="shell narrow center">
+				<div class="ornament" aria-hidden="true"><span></span></div>
+				<h2 class="closing-title"><!--FG1:slot:closing_heading-->Your chair is waiting<!--/FG1:slot--></h2>
+				<a class="btn btn-outline" href="contact.html"><!--FG1:slot:closing_button-->Book an appointment<!--/FG1:slot--></a>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="shell">
+			<p class="footer-blurb"><!--FG1:slot:footer_blurb-->An intimate black-and-gold hair atelier devoted to precision cutting, dimensional colour and unhurried, personal service.<!--/FG1:slot--></p>
+			<ul class="footer-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<p class="footer-copy">&copy; <!--FG1:slot:footer_copyright-->Aurelia<!--/FG1:slot-->. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- FG1 bootstrap -->
+	<script>
+		window.FG1 = {
+			projectId: "{{FG1_PROJECT_ID}}",
+			formToken: "{{FG1_FORM_TOKEN}}",
+			factoryUrl: "{{FG1_FACTORY_URL}}",
+			approvalUrl: "{{FG1_APPROVAL_URL}}",
+			demo: false
+		};
+	</script>
+	<script src="site.js" defer></script>
+
+</body>
+</html>
