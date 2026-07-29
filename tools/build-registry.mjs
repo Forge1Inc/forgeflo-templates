@@ -162,10 +162,13 @@ function validateTemplate(key) {
   };
 }
 
+// TEMPLATE_FILTER=<key> validates a single template (skips registry write/compare) —
+// used by conversion agents working in parallel.
+const FILTER = process.env.TEMPLATE_FILTER || "";
 const keys = existsSync(join(ROOT, "templates"))
   ? readdirSync(join(ROOT, "templates"), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort()
   : [];
-const entries = keys.map(validateTemplate).filter(Boolean);
+const entries = keys.filter((k) => !FILTER || k === FILTER).map(validateTemplate).filter(Boolean);
 
 const registry = { schema: 1, templates: entries };
 const out = JSON.stringify(registry, null, 2) + "\n";
@@ -177,6 +180,10 @@ if (errors.length) {
 }
 
 const registryPath = join(ROOT, "registry.json");
+if (FILTER) {
+  console.log(`OK — template "${FILTER}" valid (filtered run; registry untouched)`);
+  process.exit(0);
+}
 if (CHECK) {
   const current = existsSync(registryPath) ? readFileSync(registryPath, "utf8") : "";
   if (current !== out) {
