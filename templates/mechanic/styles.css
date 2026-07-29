@@ -443,3 +443,11 @@ ul.service-grid {
 .band-card .card-body {
   padding: 2rem 1.5rem;
 }
+
+/* ---- about section photo ---- */
+.about-photo {
+  aspect-ratio: 3 / 2;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}

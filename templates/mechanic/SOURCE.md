@@ -21,3 +21,8 @@
     signup band (`newsletter_signup`, contact — posts to the same FG1
     `/api/public/site-form` endpoint with a "Newsletter signup" name so submissions
     arrive as leads).
+  - 2026-07-28: about section on index.html restructured to text + photo columns
+    with a CC0 workshop photo (below).
+
+## Photos
+- assets/workshop-oil-check.webp: CC0 via Openverse (rawpixel): https://www.rawpixel.com/image/9658224/image-person-public-domain-2022

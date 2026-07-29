@@ -90,11 +90,12 @@
     "site.js",
     "assets/header-bg.webp",
     "assets/header-bg-mobile.webp",
+    "assets/workshop-oil-check.webp",
     "assets/fonts/inter-latin.woff2",
     "assets/fonts/montserrat-latin.woff2",
     "assets/fonts/boxicons.woff2"
   ],
-  "imageNotes": "header-bg.webp: dark workshop scene used as the hero backdrop on all pages (desktop); header-bg-mobile.webp: smaller crop of the same scene for viewports up to 1024px. Both sit under a primary-colour multiply overlay, so near-monochrome garage/tools photos work best.",
+  "imageNotes": "header-bg.webp: dark workshop scene used as the hero backdrop on all pages (desktop); header-bg-mobile.webp: smaller crop of the same scene for viewports up to 1024px. Both sit under a primary-colour multiply overlay, so near-monochrome garage/tools photos work best. workshop-oil-check.webp: CC0 photo of a mechanic checking oil in an engine bay (provenance in SOURCE.md), shown as the about-section image on index.html (3:2 crop, stacks above the text on mobile) — swap for the customer's own shop photo via the assets pipeline.",
   "source": {
     "name": "Car Mechanic Shop",
     "author": "Saqib Islam",

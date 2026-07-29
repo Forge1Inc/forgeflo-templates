@@ -125,12 +125,12 @@
     "pages/contact.html",
     "styles.css",
     "site.js",
-    "assets/gallery01.jpg",
+    "assets/salon-chairs.webp",
+    "assets/salon-interior.webp",
     "assets/gallery02.jpg",
-    "assets/gallery03.jpg",
     "assets/gallery04.jpg"
   ],
-  "imageNotes": "Aurelia ships photo-free by design — the black/gold luxury look is built from typography, thin gold rules and CSS gradient sheens. The only images are gallery01.jpg–gallery04.jpg in the gated photo_gallery band on index.html: original generated abstract gold-on-black art panels (not stock photography) acting as elegant placeholders. The customer's portfolio photos (their client work) replace them via the assets pipeline — keep the same four filenames; portrait 4:5 crops display best. No logo image is used; the wordmark is the site_title slot rendered in spaced serif capitals.",
+  "imageNotes": "salon-interior.webp: wide salon-room photo (styling stations, mirrors) used twice on index.html — as the framed about-band image (21:9 crop) and in the gated photo_gallery band (4:5 crop, object-position left so a different part of the room shows). salon-chairs.webp: portrait shot of styling chairs by a window, first tile of the gallery band. Both are CC0 photos (see SOURCE.md) and sit under a subtle CSS dark/gold veil (.photo-veil) so they stay inside the black/gold palette. gallery02.jpg and gallery04.jpg are original generated abstract gold-on-black art panels completing the 4-tile gallery. Customer portfolio photos replace the gallery images via the assets pipeline — portrait 4:5 crops display best. No logo image is used; the wordmark is the site_title slot rendered in spaced serif capitals.",
   "source": {
     "name": "Aurelia",
     "author": "Forge 1 Inc. (original)",

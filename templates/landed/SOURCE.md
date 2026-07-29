@@ -13,3 +13,10 @@
   (jQuery + scrolly/dropotron/scrollex/browser/breakpoints/util/main + FG1 handlers) into site.js,
   Google Fonts import removed in favour of a system font stack, Font Awesome webfonts vendored
   as woff2 into assets/fonts/, demo lorem-ipsum copy replaced with neutral home-services copy.
+  2026-07-28: spotlight placeholders pic02/pic03 replaced with CC0 photos (below); the third
+  spotlight (pic04) converted to an image-free `wrapper style2 special` band using the
+  template's own styles.
+
+## Photos
+- assets/garden-trowel.webp: CC0 via Openverse (stocksnap): https://stocksnap.io/photo/garden-trowl-6SVJRFQITC
+- assets/painter-roller.webp: CC0 via Openverse (stocksnap): https://stocksnap.io/photo/guy-man-Q67DPDQSC1

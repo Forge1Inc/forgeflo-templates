@@ -334,6 +334,38 @@ textarea.form-control {
   background: linear-gradient(to right, var(--fg1-secondary) 55%, color-mix(in srgb, var(--fg1-secondary) 52%, var(--fg1-accent)) 100%);
 }
 
+/* photo placements — real photos stay underneath the template's gradient language */
+.feature-band {
+  /* !important so this wins over the `.bg-secondary` !important shorthand above */
+  background:
+    radial-gradient(circle at 85% 18%, color-mix(in srgb, var(--fg1-accent) 24%, transparent), transparent 55%),
+    linear-gradient(37deg,
+      color-mix(in srgb, var(--fg1-secondary) 97%, transparent) 0%,
+      color-mix(in srgb, var(--fg1-secondary) 84%, transparent) 100%),
+    var(--fg1-secondary) url("assets/office-meeting.webp") center / cover no-repeat !important;
+}
+
+.photo-frame {
+  padding: 6px;
+}
+
+.photo-frame .photo-veil {
+  position: relative;
+  display: block;
+}
+
+.photo-frame .photo-veil::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    37deg,
+    color-mix(in srgb, var(--fg1-accent) 20%, transparent) 0%,
+    color-mix(in srgb, var(--fg1-primary) 14%, transparent) 100%
+  );
+}
+
 /* navigation */
 .navigation {
   padding: 20px 100px;

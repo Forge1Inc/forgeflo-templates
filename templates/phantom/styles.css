@@ -3540,3 +3540,24 @@ input, select, textarea {
 			text-align: center;
 			margin-right: 0.5em;
 		}
+
+/* FG1 Photos — keep real photography inside the template's expected crops */
+
+	.image.main.banner-photo img {
+		aspect-ratio: 1152 / 326;
+		object-fit: cover;
+		object-position: center 30%;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.image.main.banner-photo img {
+			aspect-ratio: 16 / 9;
+		}
+
+	}
+
+	.image.fit.gallery-photo img {
+		aspect-ratio: 353 / 326;
+		object-fit: cover;
+	}

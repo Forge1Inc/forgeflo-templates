@@ -118,10 +118,12 @@
     "pages/contact.html",
     "styles.css",
     "site.js",
+    "assets/office-team.webp",
+    "assets/office-meeting.webp",
     "assets/fonts/themify.woff",
     "assets/fonts/themify.ttf"
   ],
-  "imageNotes": "No raster images ship with this template: upstream Agen demo photos are demo-only (not licensed for redistribution per the upstream README), so hero, page-title, about and CTA bands are palette-driven CSS gradient bands. Customer photos ride the existing assets pipeline.",
+  "imageNotes": "Hero, page-title and CTA bands remain palette-driven CSS gradient bands (upstream Agen demo photos were demo-only and never shipped). Two CC0 photos (provenance in SOURCE.md) are placed on index.html without breaking the gradient identity: office-team.webp sits in the about band as a gradient-framed photo column (stacks under the text on mobile), and office-meeting.webp is the feature band's background photo underneath the template's own secondary/accent gradient veil (layout unchanged; text contrast preserved). Customer photos ride the existing assets pipeline.",
   "source": {
     "name": "Agen",
     "author": "Themefisher",

@@ -117,11 +117,9 @@
     "assets/tile04.jpg",
     "assets/tile05.jpg",
     "assets/tile06.jpg",
-    "assets/services-main.jpg",
-    "assets/gallery01.jpg",
-    "assets/gallery02.jpg",
-    "assets/gallery03.jpg",
-    "assets/gallery04.jpg",
+    "assets/spa-facial.webp",
+    "assets/spa-manicure-hand.webp",
+    "assets/spa-manicure-detail.webp",
     "assets/fonts/fa-solid-900.woff2",
     "assets/fonts/fa-solid-900.woff",
     "assets/fonts/fa-regular-400.woff2",
@@ -129,7 +127,7 @@
     "assets/fonts/fa-brands-400.woff2",
     "assets/fonts/fa-brands-400.woff"
   ],
-  "imageNotes": "All photos are the soft abstract blur images shipped in the Phantom CC-BY zip — safe neutral placeholders. tile01–tile06.jpg sit behind the coloured homepage service tiles (the palette wash covers them, so any photo works); services-main.jpg is the wide banner on services.html; gallery01–gallery04.jpg fill the gated gallery band; logo.svg is a generic diamond mark — swap for the client's logo via the assets pipeline.",
+  "imageNotes": "tile01–tile06.jpg sit behind the coloured homepage service tiles (the palette wash covers them, so any photo works) — these stay the original Phantom abstract blurs by design. Real CC0 photos (provenance in SOURCE.md) on services.html: spa-facial.webp is the wide banner (cropped to the template's 1152x326 band via CSS object-fit, 16:9 on small screens) and also the first tile of the gated 3-image gallery band; spa-manicure-hand.webp and spa-manicure-detail.webp complete the gallery. Customer photos replace them via the assets pipeline (near-square crops display best in the gallery). logo.svg is a generic diamond mark — swap for the client's logo via the assets pipeline.",
   "source": {
     "name": "Phantom",
     "author": "HTML5 UP (ajlkn)",

@@ -537,6 +537,44 @@ h2.eyebrow { line-height: 1.6; }
 	object-fit: cover;
 }
 
+/* photographs: subtle dark/gold veil keeps the black-and-gold palette coherent */
+.photo-veil {
+	position: relative;
+	display: block;
+}
+
+.photo-veil img { display: block; }
+
+.photo-veil::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background:
+		linear-gradient(
+			160deg,
+			color-mix(in srgb, var(--fg1-primary) 14%, transparent) 0%,
+			transparent 45%,
+			color-mix(in srgb, var(--fg1-bg) 38%, transparent) 100%
+		);
+}
+
+.photo-veil img.crop-left { object-position: 18% center; }
+
+/* about band photograph — wide framed interior shot */
+.about-photo {
+	margin: clamp(2.5rem, 6vw, 4.5rem) 0 0;
+	border: 1px solid var(--au-hairline);
+	padding: clamp(0.6rem, 1.2vw, 0.9rem);
+	background: color-mix(in srgb, var(--fg1-surface) 55%, var(--fg1-bg));
+}
+
+.about-photo img {
+	width: 100%;
+	aspect-ratio: 21 / 9;
+	object-fit: cover;
+}
+
 /* ------------------------------------------------------ newsletter band */
 
 .newsletter-form { margin-top: 2.6rem; }
@@ -801,6 +839,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
 	.gallery-grid { grid-template-columns: repeat(2, 1fr); }
+	.about-photo img { aspect-ratio: 16 / 10; }
 	.about-grid, .contact-grid { grid-template-columns: 1fr; }
 	.about-col-body, .contact-details-col {
 		border-left: 0;

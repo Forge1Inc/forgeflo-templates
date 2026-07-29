@@ -12,3 +12,10 @@
   (nav toggle, sticky nav, FG1 form handlers); Google Fonts import swapped for a
   matching system font stack; Themify Icons font vendored into assets/fonts/
   (icon font is SIL OFL licensed).
+  2026-07-28: two CC0 photos added on index.html (about-band photo column and
+  feature-band background under the template's gradient veil) — provenance below;
+  all other bands remain pure CSS gradients.
+
+## Photos
+- assets/office-meeting.webp: CC0 via Openverse (stocksnap): https://stocksnap.io/photo/team-meeting-JBW2PXDOL6
+- assets/office-team.webp: CC0 via Openverse (stocksnap): https://stocksnap.io/photo/team-meeting-VQXYE2ZEHC

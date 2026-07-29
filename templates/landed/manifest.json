@@ -115,9 +115,8 @@
     "LICENSE",
     "assets/banner.jpg",
     "assets/pic01.jpg",
-    "assets/pic02.jpg",
-    "assets/pic03.jpg",
-    "assets/pic04.jpg",
+    "assets/garden-trowel.webp",
+    "assets/painter-roller.webp",
     "assets/pic07.jpg",
     "assets/overlay.png",
     "assets/arrow.svg",
@@ -125,7 +124,7 @@
     "assets/fonts/fa-brands-400.woff2",
     "assets/fonts/fa-regular-400.woff2"
   ],
-  "imageNotes": "banner.jpg: full-width hero background behind the dark overlay; pic01.jpg: small square accent image beside the hero text; pic02.jpg/pic03.jpg/pic04.jpg: tall spotlight background photos (about, services teaser, quality teaser); pic07.jpg: wide photo on the services page. All shipped images are the soft gradient placeholders from the original template — swap in real cleaning/landscaping/renovation photos of similar dimensions via the assets pipeline.",
+  "imageNotes": "banner.jpg: full-width hero background behind the dark overlay; pic01.jpg: small square accent image beside the hero text (gradient placeholder); garden-trowel.webp: CC0 photo of a garden trowel in a flower bed — parallax background of spotlight one (about); painter-roller.webp: CC0 photo of a decorator rolling paint — parallax background of spotlight two (services teaser); the former third spotlight is now an image-free accent band using the template's own wrapper style. pic07.jpg: wide gradient placeholder photo on the services page. Photo provenance in SOURCE.md; swap in the customer's cleaning/landscaping/renovation photos of similar dimensions via the assets pipeline.",
   "source": {
     "name": "Landed",
     "author": "HTML5 UP (ajlkn)",

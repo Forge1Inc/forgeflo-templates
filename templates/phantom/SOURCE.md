@@ -15,3 +15,11 @@
   demo form and dead social `#` links removed; demo images are the abstract blur JPGs from
   the official zip, renamed by role. Decorative inline SVG data-URIs (hamburger/close icons,
   select arrow, tile cross) keep their baked-in colours — they are artwork, not themable CSS.
+  2026-07-28: services.html blur placeholders (services-main.jpg, gallery01–04.jpg) replaced
+  with three CC0 photos (below); gallery reduced from a 4-tile to a 3-tile grid; homepage
+  service tiles keep their original abstract blurs under the palette wash by design.
+
+## Photos
+- assets/spa-facial.webp: CC0 via Openverse (stocksnap): https://stocksnap.io/photo/woman-skin-B1PESLU0KP
+- assets/spa-manicure-hand.webp: CC0 via Openverse (rawpixel): https://www.rawpixel.com/image/5972117/close-female-hand-with-manicured-nails
+- assets/spa-manicure-detail.webp: CC0 via Openverse (rawpixel): https://www.rawpixel.com/image/5926347/photo-image-public-domain-hand-pink
